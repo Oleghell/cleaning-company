@@ -388,7 +388,7 @@ body {
 }
 @media (max-width: 565px) {
   .header {
-    background: url(../images/design/bg_small.38e3f9.png);
+    background: url(../images/design/bg_small.png);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;

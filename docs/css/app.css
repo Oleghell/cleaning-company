@@ -274,6 +274,7 @@ body {
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 .button--primary:hover {
   color: #FFA62B;
@@ -489,7 +490,7 @@ body {
   opacity: 1;
 }
 .header-hero__desc {
-  color: #737373;
+  color: #000000;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -571,6 +572,7 @@ body {
   margin-bottom: 10px;
 }
 .item-header__name {
+  text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -582,6 +584,7 @@ body {
   margin-bottom: 10px;
 }
 .item-header__descr {
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -676,6 +679,10 @@ body {
 .menu__item {
   display: inline-block;
 }
+.menu__item:hover svg path {
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
 @media (max-width: 767px) {
   .menu__item {
     display: block;
@@ -695,9 +702,12 @@ body {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+.menu__list {
+  
 }
 @media (max-width: 767px) {
   .menu__link {

@@ -1,0 +1,85 @@
+.getintouch {
+  padding: 80px 0px 135px 0px;
+  &__text {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 992px) {
+    .getintouch {
+      padding: 50px 0;
+    }
+    .getintouch__text {
+      margin: 0 auto 30px;
+    }
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 992px) {
+    .getintouch__items {
+      display: block;
+      margin: 0 -15px;
+    }
+  }
+  &__item {
+    flex: 0 1 33.333%;
+  }
+}
+.item-getintouch {
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #252b42;
+    color: $white;
+  }
+  &:hover .item-getintouch__button {
+    color: #fff;
+    border-color: $white;
+  }
+  &:hover .item-getintouch__icons svg path {
+    fill: $white;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  padding: 50px 15px;
+  &__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__email {
+    color: inherit;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__button {
+    border: 1px solid #ffa62b;
+    border-radius: 5px;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffa62b;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 20px;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

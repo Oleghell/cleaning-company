@@ -1,0 +1,112 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1076px;
+  padding: 0 15px;
+  height: 100%;
+}
+.button {
+  display: inline-block;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border: 1px solid;
+  transform: scale(0);
+  transition: all 0.8s ease 0s;
+  &._active {
+    transform: scale(1);
+  }
+  &--primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+  &--rounded {
+    border-radius: 37px;
+  }
+  &--secondary {
+    background-color: transparent;
+    border-color: $secondary-color;
+    color: $secondary-color;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $white;
+      background-color: $secondary-color;
+    }
+  }
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: $text-color;
+  max-width: 480px;
+  margin: 0 auto 10px;
+  opacity: 0;
+  &._active {
+    opacity: 1;
+    transition: all 1s ease;
+  }
+}
+.descr {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $second-text-color;
+  max-width: 510px;
+  opacity: 0;
+  &._active {
+    opacity: 1;
+    transition: all 2s ease;
+  }
+}
+.scrollUp {
+  position: fixed;
+  z-index: 5;
+  bottom: 30px;
+  right: 30px;
+  background-color: $primary-color;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: translate(500%, 0px);
+  &._active {
+    transform: translate(0px, 0px);
+  }
+  &:hover {
+    background-color: #00a0c1;
+    svg path {
+      fill: $primary-color;
+    }
+  }
+}
+.anim-show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}

@@ -578,9 +578,6 @@ body {
   line-height: 32px;
   letter-spacing: 0.1px;
   color: #252B42;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   margin-bottom: 10px;
 }
 .item-header__descr {

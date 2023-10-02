@@ -1,0 +1,24 @@
+.clients {
+  padding: 50px 0;
+  background-color: $second-bg-color;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    padding: 0 15px;
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 140px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .clients {
+    padding: 30px 0;
+  }
+}
